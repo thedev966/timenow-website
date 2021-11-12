@@ -6,3 +6,5 @@
  - React.JS
  - Styled Components
  - Netlify for deployment
+
+Live preview link: https://tweetnow.netlify.app
