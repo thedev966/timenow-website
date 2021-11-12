@@ -7,4 +7,4 @@
  - Styled Components
  - Netlify for deployment
 
-Live preview link: https://tweetnow.netlify.app
+Live preview link: https://timenow-landing.netlify.app/
