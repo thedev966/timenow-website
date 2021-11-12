@@ -59,8 +59,20 @@ const Title = styled.h2`
   color: var(--dark-purple);
 
   @media only screen and (min-width: 600px) {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1.82rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    font-size: 1.9rem;
+  }
+
+  @media only screen and (min-width: 900px) {
+    font-size: 2.2rem;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    margin-top: 45px;
   }
 `;
 
@@ -76,6 +88,10 @@ const Description = styled.p`
     font-size: 0.98rem;
     line-height: 24px;
   }
+
+  @media only screen and (min-width: 900px) {
+    font-size: 1.03rem;
+  }
 `;
 
 const Buttons = styled.div`
@@ -88,6 +104,11 @@ const Buttons = styled.div`
     width: 75%;
     flex-direction: column;
     align-items: unset;
+  }
+
+  @media only screen and (min-width: 900px) {
+    width: 100%;
+    flex-direction: row;
   }
 `;
 
@@ -115,9 +136,15 @@ const DemoButton = styled(ScheduleButton)`
 const SubtitleContainer = styled.div`
   display: flex;
   margin-top: 25px;
+  max-width: 270px;
 
   @media only screen and (min-width: 600px) {
     margin-top: 14px;
+  }
+
+  @media only screen and (min-width: 900px) {
+    margin-top: 18px;
+    max-width: unset;
   }
 `;
 
@@ -134,6 +161,11 @@ const ShieldIcon = styled.img`
 const SubtitleContent = styled.div`
   margin-left: 15px;
   text-align: left;
+
+  @media only screen and (min-width: 900px) {
+    margin-left: 9px;
+    margin-top: 2px;
+  }
 `;
 
 const Text = styled.p`
@@ -157,6 +189,17 @@ const Link = styled.a`
 
   @media only screen and (min-width: 600px) {
     font-size: 0.92rem;
+    position: absolute;
+    bottom: -2px;
+    left: 74px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    left: 76px;
+  }
+
+  @media only screen and (min-width: 600px) {
+    position: unset;
   }
 `;
 
@@ -169,11 +212,38 @@ const ImageContainer = styled.div`
   padding: 40px 30px;
 
   @media only screen and (min-width: 600px) {
+    position: unset;
     grid-column: 7 / 13;
-    margin-top: 0;
-    padding: 0;
-    right: 0;
-    top: 0;
+    width: 111%;
+    height: 140%;
+    margin-top: -23vh;
+    display: flex;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 768px) {
+    height: 150%;
+    padding: 50px;
+  }
+
+  @media only screen and (min-width: 900px) {
+    height: 172%;
+    margin-top: -23vh;
+    padding: 55px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    padding: 65px;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    height: 145%;
+    padding: 110px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    height: 125%;
+    padding: 150px;
   }
 `;
 

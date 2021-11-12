@@ -32,4 +32,14 @@ const FeaturesContainer = styled.div`
   row-gap: 60px;
   padding: 35px 5%;
   background-color: var(--light-blue);
+
+  @media only screen and (min-width: 600px) {
+    margin-top: 50px;
+  }
+
+  @media only screen and (min-width: 900px) {
+    flex-direction: row;
+    row-gap: 60px;
+    column-gap: 80px;
+  }
 `;

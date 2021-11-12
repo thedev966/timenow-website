@@ -39,9 +39,37 @@ const AvatarListContainer = styled.div`
   column-gap: 8px;
   flex-wrap: wrap;
   align-items: center;
+
+  @media only screen and (min-width: 600px) {
+    margin-top: 12px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    column-gap: 10px;
+    max-width: 40%;
+  }
+
+  @media only screen and (min-width: 900px) {
+    max-width: 100%;
+  }
 `;
 
 const AvatarItem = styled.img`
   width: 42px;
   height: 42px;
+
+  @media only screen and (min-width: 600px) {
+    width: 41px;
+    height: 41px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 45px;
+    height: 45px;
+  }
+
+  @media only screen and (min-width: 900px) {
+    width: 38px;
+    height: 38px;
+  }
 `;

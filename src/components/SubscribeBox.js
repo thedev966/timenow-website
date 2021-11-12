@@ -17,6 +17,10 @@ export default SubscribeBox;
 
 const SubscribeBoxContainer = styled.div`
   margin-top: 25px;
+
+  @media only screen and (min-width: 600px) {
+    margin-top: 38px;
+  }
 `;
 
 const Heading = styled.h2`
@@ -24,6 +28,10 @@ const Heading = styled.h2`
   font-weight: 700;
   color: var(--black);
   margin-bottom: 8px;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 1.02rem;
+  }
 `;
 
 const ButtonContainer = styled.div`
@@ -34,6 +42,20 @@ const ButtonContainer = styled.div`
   border-radius: 6px;
   overflow: hidden;
   padding: 5px;
+
+  @media only screen and (min-width: 600px) {
+    width: 70%;
+    padding: 4px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 58%;
+  }
+
+  @media only screen and (min-width: 992px) {
+    width: 94%;
+    border: 1px solid lightgray;
+  }
 `;
 
 const Input = styled.input`
@@ -45,6 +67,15 @@ const Input = styled.input`
   color: var(--dark-green);
   font-size: 0.9rem;
   font-weight: 500;
+
+  @media only screen and (min-width: 600px) {
+    width: 57%;
+  }
+
+  @media only screen and (min-width: 992px) {
+    width: 54%;
+    height: 47px;
+  }
 `;
 
 const Button = styled.button`
@@ -62,5 +93,15 @@ const Button = styled.button`
 
   &:hover {
     opacity: 0.8;
+  }
+
+  @media only screen and (min-width: 600px) {
+    width: 43%;
+  }
+
+  @media only screen and (min-width: 992px) {
+    width: 46%;
+    height: 47px;
+    font-size: 0.88rem;
   }
 `;

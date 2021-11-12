@@ -97,6 +97,10 @@ const Navbar = styled.ul`
     flex-direction: row;
     margin-left: 10%;
   }
+
+  @media only screen and (min-width: 992px) {
+    margin-left: 4%;
+  }
 `;
 
 const NavbarItem = styled.li`
